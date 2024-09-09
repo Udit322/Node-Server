@@ -2,8 +2,8 @@ const http = require("http"); // Fix the typo here
 
 const fs = require("fs");
 
-const PORT = 4000; // Ensure the port is set properly
-const host = "localhost";
+const PORT = process.env.PORT; // Ensure the port is set properly
+// const host = "localhost";
 const home = fs.readFileSync("./indes.html", "utf-8");
 
 const server = http.createServer((req, res) => {
