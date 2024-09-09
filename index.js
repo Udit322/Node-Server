@@ -30,6 +30,6 @@ const server = http.createServer((req, res) => {
   //   res.end("<h1>Hello, world!</h1>");
 });
 
-server.listen(PORT, host, () => {
-  console.log(`Server is working on http://${host}:${PORT}`); // Ensure this prints the correct port
+server.listen(PORT, () => {
+  console.log(`Server is working `); // Ensure this prints the correct port
 });
