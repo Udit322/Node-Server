@@ -4,7 +4,7 @@ const fs = require("fs");
 
 const PORT = process.env.PORT; // Ensure the port is set properly
 // const host = "localhost";
-const home = fs.readFileSync("https://github.com/Udit322/Node-Server/blob/e353ed3138c10a73e523e40a8b62805481e6cd31/indes.html", "utf-8");
+// const home = fs.readFileSync("https://github.com/Udit322/Node-Server/blob/e353ed3138c10a73e523e40a8b62805481e6cd31/indes.html", "utf-8");
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
@@ -12,7 +12,7 @@ const server = http.createServer((req, res) => {
   res.setHeader("Content-Type", "text/html"); // Set content type to HTML
   if (req.url === "/") {
     // return res.end("<h1>HOME PAGE</h1>");
-    return res.end(home);
+    return res.end("<h1>HOME PAGE</h1>");
   }
   if (req.url === "/about") {
     return res.end("<h1>About PAGE</h1>");
