@@ -4,7 +4,7 @@ const fs = require("fs");
 
 const PORT = process.env.PORT; // Ensure the port is set properly
 // const host = "localhost";
-const home = fs.readFileSync("D:Nodejs2indes.html", "utf-8");
+const home = fs.readFileSync("./index.html", "utf-8");
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
